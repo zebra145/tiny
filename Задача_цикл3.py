@@ -5,8 +5,13 @@
     
 A=int(input("Введите целое число: "))
 B=int(input("Введите целое число: "))
-A<B
 
-for i in range (B-1,A,-1):
-    print (i)
-print ("Количество чисел :" ,B-A-1)
+if A<B:
+    for i in range (B-1,A,-1):
+        print (i)
+    print ("Количество чисел :" ,B-A-1)
+elif A>B:
+    print ("Ошибка:первое число должно быть меньше второго")
+else:
+    print ("Ошибка:оба числа равны")
+
